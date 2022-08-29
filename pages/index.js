@@ -12,7 +12,7 @@ const useStyles=makeStyles({
     backgroundColor:'red'
   }
 })
-export default function index() {
+export default function Index() {
   const classes=useStyles()
   return (
     <Box className={classes.hola} >
