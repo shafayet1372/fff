@@ -1,23 +1,21 @@
 import React from 'react'
-import { Box } from '@mui/system'
-import { makeStyles } from '@mui/styles'
-import { Typography } from '@mui/material'
-const useStyles=makeStyles({
-  main:{
-    color:'white'
-  },
-  hola:{
-    height:'200px',
-    width:'100%',
-    backgroundColor:'red'
-  }
-})
-export default function index() {
-  const classes=useStyles()
-  return (
-    <Box className={classes.hola} >
+import { Button } from 'react-bootstrap';
+import Styles from './style.module.css'
+import {Row,Col} from 'react-bootstrap';
+import Grid from '@mui/material/Grid';
 
-      <Typography className={classes.main}>sdsad</Typography>
-    </Box>
+export default function index() {
+  return (
+    <div>
+     <Row>
+      <Col md={12} sm={6} xs={12}>sd
+      </Col>
+      <Col md={12} sm={6} xs={6}>sd
+      </Col>
+      <Col md={12} sm={6} xs={6}>ssd
+      </Col>
+     </Row>
+    </div>
   )
 }
+
